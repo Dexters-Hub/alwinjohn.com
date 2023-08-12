@@ -4,6 +4,7 @@
 
 :root {
   --background-white: #ffffff;
+  
 }
 
 
@@ -12,4 +13,10 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #1C1C1C;
+}
+
+
+.gray-color {
+  color: #1C1C1C;
+  opacity: 0.7;
 }
