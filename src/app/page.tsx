@@ -1,18 +1,24 @@
+import Nav from '@/components/Nav/Nav';
 import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col flex-start p-24">
-      <div className='flex justify-between'>
-        <div className='flex flex-col justify-around'>
-            <div className=''>
-              <h2 className="text-8xl font-bold">Alwin John</h2>
-              <p className="text-5xl font-semibold py-8">Frontend Engineer | UX Engineer</p>
-            </div>
-            <p className='text-[32px] font-normal w-3/4'>I&apos;m a Frontend Engineer with 1.5 years experience building interactive web apps.</p>
-        </div>
-        <Image className='rounded-full' src="/images/profile.png" alt='A handsome guy' height={400} width={400}/>
-      </div>
+  <div className='min-h-screen'>
+    <Nav />
+    <main className="grid grid-cols-12 px-16 pt-32 gap-x-5">
+              
+              <div className='col-start-2 col-span-6'>
+                <h3 className="text-8xl font-bold">Alwin John</h3>
+                <p className="text-5xl font-semibold pt-4 pb-10">Frontend Engineer | UX Engineer</p>
+                <p className='text-[30px] '>I&apos;m a Frontend Engineer with 1.5 years experience building interactive web apps.</p>
+
+                <p className='text-[30px] mt-8'>I <a href='' className='bg-gradient-to-r from-green-400  via-cyan-500 to-sky-500  bg-clip-text text-transparent'>code</a>, <a href='' className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  bg-clip-text text-transparent'>write</a> and build stuff on internet and talk about good design, solving problems and making the web more usable by keeping it simple.</p>
+              </div>
+
+              <Image className='col-end-12 col-span-3 rounded-full' src="/images/profile.png" alt='A handsome guy' height={400} width={400}/>
+              
+
     </main>
+  </div>
   );
 }
