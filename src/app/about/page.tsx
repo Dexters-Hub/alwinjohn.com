@@ -5,6 +5,7 @@ export default function About() {
   return (
   <div className='min-h-screen'>
     <Nav />
+    <h4 className="flex text-4xl font-bold justify-center p-8">Currently under construction v4.0.1-beta</h4>
     <main className="grid grid-cols-12 px-16 pt-32 gap-x-5">   
         <h3 className='col-start-2  col-span-2 font-semibold text-4xl'>About Me</h3>
         <div className='col-start-2 col-span-10 text-[30px]'>

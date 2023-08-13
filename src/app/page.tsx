@@ -7,9 +7,10 @@ export default function Home() {
   return (
   <div className='min-h-screen'>
     <Nav />
+    <h4 className="flex text-4xl font-bold justify-center p-8">Currently under construction v4.0.1-beta</h4>
     <main className="grid grid-cols-12 px-16 pt-32 gap-x-5">         
               <div className='col-start-2 col-span-6'>
-
+                
                 <TimeDisplay />
                 <h3 className="text-8xl font-bold">Alwin John</h3>
                 <p className="text-5xl font-semibold pt-4 pb-10">Frontend Engineer | UX Engineer</p>
