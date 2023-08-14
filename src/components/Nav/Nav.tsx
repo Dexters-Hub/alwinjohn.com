@@ -12,7 +12,7 @@ const Nav = () => {
 
             <nav className='flex items-center col-start-3 justify-between text-2xl font-semibold'>
                 <Link href='/about'>About</Link>
-                <Link href='/blogs'>Blogs</Link>
+                <a href='https://blogs.alwinjohn.com' target='_blank' rel='noreferrer'>Blogs</a>
                 <Link href=''>Projects</Link>
                 <Link href=''>Contact</Link>
             </nav>

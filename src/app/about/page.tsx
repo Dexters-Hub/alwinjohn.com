@@ -21,6 +21,32 @@ export default function About() {
             <Image className='z-10 absolute right-0 top-20' src='/images/group.png' alt='A handsome guy' height={550} width={550}/>
         
         </div>
+        <h3 className='col-start-2 col-span-2 font-semibold text-4xl'>Online</h3>
+        <nav className='col-start-2 flex space-x-4 py-12'>
+          <a href='mailto:alwinjohn.com' className='rounded-lg bg-red-500 py-2 px-8 hover:bg-red-500 font-bold text-white'>Email</a>
+          <a href='https://twitter.com/_alwin_john' target='_blank' rel='noreferrer' className="rounded-lg bg-sky-500 py-2 px-8 hover:bg-sky-500 font-bold text-white">Twitter</a>
+          <a href='https://github.com/Dexters-Hub' target='_blank' rel='noreferrer' className="rounded-lg bg-gray-900 py-2 px-8 hover:bg-gray-900 font-bold text-white">Github</a>
+          <a href='https://leetcode.com/Dexters-Hub/' target='_blank' rel='noreferrer' className="rounded-lg bg-orange-400 py-2 px-8 hover:bg-orange-400 font-bold text-white">Leetcode</a>
+          <a href='https://www.linkedin.com/in/alwinjohn/' target='_blank' rel='noreferrer' className="rounded-lg bg-blue-600 py-2 px-8 hover:bg-blue-600 font-bold text-white">LinkedIn</a>
+        </nav>
+
+        <h3 className='col-start-2 col-span-2 font-semibold text-4xl pt-16'>Work</h3>
+
+        <div className='col-start-2 col-span-10 py-12'>
+          <div className='flex items-center'>
+            <div className="inline-block border rounded-full border-slate-300 ">
+              <Image src='/images/google.png' alt='An awesome guy' className='rounded-full p-6 ' height={125} width={125}/>
+            </div>
+            <div className='w-full ml-12'>
+              <div className='flex w-full justify-between font-bold mb-4'>
+                <div>UX Engineer</div>
+                <div>Google</div>
+                <div>2022 - Now</div>
+              </div>
+              <div className='text-slate-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, molestiae voluptas laudantium nam minus ad dolore vitae. Temporibus, soluta? Eaque quas totam at ipsum id? Voluptatibus ipsa odit eligendi beatae!</div>
+            </div>
+          </div>
+        </div>
     </main>
   </div>
   );
