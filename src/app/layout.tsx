@@ -1,6 +1,8 @@
+import Nav from '@/components/Nav/Nav';
 import './globals.css';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import Footer from '@/components/Footer/Footer';
 
 const proxima = localFont({
   src: [
@@ -32,7 +34,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${proxima.variable} font-sans`}>
-      <body >{children}</body>
+      <body>
+        <Nav />
+        {children}
+        <Footer />
+        </body>
     </html>
   );
 }

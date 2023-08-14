@@ -1,15 +1,14 @@
-import Nav from '@/components/Nav/Nav';
 import Image from 'next/image';
 import profilePicture from '../../public/images/profile.png';
 import TimeDisplay from '@/components/Nav/TimeDisplay';
 
+
 export default function Home() {
   return (
   <div className='min-h-screen'>
-    <Nav />
     <h4 className="flex text-4xl font-bold justify-center p-8">Currently under construction v4.0.1-beta</h4>
     <p className="flex text-2xl font-bold justify-center p-8 ">Old Portfolio<a className='text-rose-400'  href="https://portfolio-v1-1t92fq516-dexters-hub.vercel.app/" target='_blank' rel='noreferrer'> : v3.0.0</a></p>
-    <main className="grid grid-cols-12 px-16 pt-32 gap-x-5">         
+    <main className="grid grid-cols-12 px-16 py-32 gap-x-5">         
               <div className='col-start-2 col-span-6'>
                 
                 <TimeDisplay />
