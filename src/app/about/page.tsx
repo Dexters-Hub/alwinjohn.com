@@ -3,7 +3,6 @@ import Image from 'next/image';
 export default function About() {
   return (
   <div className='min-h-screen'>
-    <h4 className="flex text-4xl font-bold justify-center p-8">Currently under construction v4.0.1-beta</h4>
     <p className="flex text-2xl font-bold justify-center p-8 ">Old Portfolio<a className='text-rose-400'  href="https://portfolio-v1-1t92fq516-dexters-hub.vercel.app/" target='_blank' rel='noreferrer'> : v3.0.0</a></p>
     <main className="grid grid-cols-12 px-16 pt-32 gap-x-5">   
         <h3 className='col-start-2  col-span-2 font-semibold text-4xl'>About Me</h3>
@@ -22,12 +21,12 @@ export default function About() {
         
         </div>
         <h3 className='col-start-2 col-span-2 font-semibold text-4xl'>Online</h3>
-        <nav className='col-start-2 flex space-x-4 py-12'>
-          <a href='mailto:alwinjohn.com' className='rounded-lg bg-red-500 py-2 px-8 hover:bg-red-500 font-bold text-white'>Email</a>
-          <a href='https://twitter.com/_alwin_john' target='_blank' rel='noreferrer' className="rounded-lg bg-sky-500 py-2 px-8 hover:bg-sky-500 font-bold text-white">Twitter</a>
-          <a href='https://github.com/Dexters-Hub' target='_blank' rel='noreferrer' className="rounded-lg bg-gray-900 py-2 px-8 hover:bg-gray-900 font-bold text-white">Github</a>
-          <a href='https://leetcode.com/Dexters-Hub/' target='_blank' rel='noreferrer' className="rounded-lg bg-orange-400 py-2 px-8 hover:bg-orange-400 font-bold text-white">Leetcode</a>
-          <a href='https://www.linkedin.com/in/alwinjohn/' target='_blank' rel='noreferrer' className="rounded-lg bg-blue-600 py-2 px-8 hover:bg-blue-600 font-bold text-white">LinkedIn</a>
+        <nav className='col-start-2 flex space-x-4 py-12 font-normal'>
+          <a href='mailto:alwinjohn.com' className='rounded-lg border text-slate-500 py-2 px-8 hover:bg-red-500 transition duration-250 hover:ease-in hover:text-white'>Email</a>
+          <a href='https://twitter.com/_alwin_john' target='_blank' rel='noreferrer' className="rounded-lg border text-slate-500 py-2 px-8 transition duration-250 hover:ease-in hover:bg-sky-500  hover:text-white">Twitter</a>
+          <a href='https://github.com/Dexters-Hub' target='_blank' rel='noreferrer' className="rounded-lg border text-slate-500 py-2 px-8 transition duration-250 hover:ease-in hover:bg-gray-900  hover:text-white">Github</a>
+          <a href='https://leetcode.com/Dexters-Hub/' target='_blank' rel='noreferrer' className="rounded-lg border text-slate-500 py-2 px-8 transition duration-250 hover:ease-in hover:bg-orange-400  hover:text-white">Leetcode</a>
+          <a href='https://www.linkedin.com/in/alwinjohn/' target='_blank' rel='noreferrer' className="rounded-lg border text-slate-500 py-2 px-8 transition duration-250 hover:ease-in hover:bg-blue-600  hover:text-white">LinkedIn</a>
         </nav>
 
         <h3 className='col-start-2 col-span-2 font-semibold text-4xl pt-16'>Work</h3>
