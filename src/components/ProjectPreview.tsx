@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { PostMetadata } from './PostMetadata';
+import { ProjectMetadata } from './ProjectMetadata';
 
-const PostPreview = (props: PostMetadata) => {
+const ProjectPreview = (props: ProjectMetadata) => {
   return (
-    <Link href={`/posts/${props.slug}`}><div
+    <Link href={`/projects/${props.slug}`}><div
       className="border h-[320px] border-slate-100 p-8 rounded-md shadow-sm
     bg-white hover:border-slate-300 transition duration-150 hover:ease-in"
     >
@@ -18,4 +18,4 @@ const PostPreview = (props: PostMetadata) => {
   );
 };
 
-export default PostPreview;
+export default ProjectPreview;

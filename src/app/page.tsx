@@ -4,6 +4,9 @@ import TimeDisplay from '@/components/Nav/TimeDisplay';
 import getPostMetadata from '@/components/getPostMetadata';
 import PostPreview from '@/components/PostPreview';
 import Link from 'next/link';
+import AchievementPreview from '@/components/Achievement/AchievementPreview';
+import getProjectMetadata from '@/components/getProjectMetadata';
+import ProjectPreview from '@/components/ProjectPreview';
 
 export default function Home() {
   const postMetadata = getPostMetadata();
@@ -11,9 +14,21 @@ export default function Home() {
     <PostPreview key={post.slug} {...post} />
   ));
 
+  const projectMetadata = getProjectMetadata();
+
+  //sorting projectPreviews based on date
+  const projectPreviews = projectMetadata.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  }).map((project) => (
+    <ProjectPreview key={project.slug} {...project} />
+  ));
+  
+
+  
+
+
   return (
   <div className='min-h-screen flex flex-col '>
-    <p className="flex text-2xl font-bold justify-center p-8 ">Old Portfolio<a className='text-rose-400'  href="https://portfolio-v1-1t92fq516-dexters-hub.vercel.app/" target='_blank' rel='noreferrer'> : v3.0.0</a></p>
     <main className="grid grid-cols-12 px-16 py-32 gap-x-5">         
               <div className='col-start-2 col-span-6'>
                 
@@ -26,9 +41,35 @@ export default function Home() {
               <Image className='col-end-12 col-span-3 rounded-full' src={profilePicture} placeholder='blur'  alt='A handsome guy' height={400} width={400}/>
     </main>
 
+
+    <AchievementPreview />
+
+    <div className='grid grid-cols-12 px-16 py-16 gap-x-5'>
+    <h3 className='col-start-2 col-span-2 font-semibold text-4xl py-6'>Projects</h3>
+
+    <div className='col-start-2 col-span-10 flex justify-between text-slate-500'>
+      <div className='pb-12'>Selected open source projects.</div>
+      {projectPreviews.length > 4 && (
+
+                <Link href='/projects'>View all</Link> 
+
+      )}
+    </div>
     
 
-    <div className='grid grid-cols-12 px-16 py-32 gap-x-5'>
+   
+
+    <div className="col-start-2 col-span-10 grid grid-cols-2 gap-8">
+        {projectPreviews.slice(0, 4).map((preview, index) => (
+            <div key={index}>{preview}</div>
+        ))}
+    </div>
+
+    
+
+    </div>
+
+    <div className='grid grid-cols-12 px-16 py-16 gap-x-5'>
     <h3 className='col-start-2 col-span-2 font-semibold text-4xl py-6'>Writings</h3>
 
     <div className='col-start-2 col-span-10 flex justify-between text-slate-500'>
