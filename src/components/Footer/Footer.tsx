@@ -2,7 +2,7 @@ import { AiOutlineTwitter, AiOutlineGithub, AiFillLinkedin } from 'react-icons/a
 
 const Footer = () => {
   return (
-    <footer className="md:grid md:mx-48  md:py-12 md:border-t py-6 border-slate-200">
+    <footer className="md:grid md:mx-48 mx-7 md:py-12 border-t py-6 border-slate-200">
 
         <div className="flex md:justify-between justify-around">
             <p className=" text-gray-500">Alwin John @2023</p>

@@ -4,7 +4,7 @@ import { ProjectMetadata } from './ProjectMetadata';
 const ProjectPreview = (props: ProjectMetadata) => {
   return (
     <Link href={`/projects/${props.slug}`}><div
-      className="border h-[320px] border-slate-100 p-8 rounded-md shadow-sm
+      className="border min-h-[320px] border-slate-100 p-8 rounded-md shadow-sm
     bg-white hover:border-slate-300 transition duration-150 hover:ease-in"
     >
       

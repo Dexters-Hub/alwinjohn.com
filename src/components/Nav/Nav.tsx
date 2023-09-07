@@ -37,7 +37,7 @@ const Nav = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <nav className='md:hidden absolute top-28 right-12 flex flex-col items-end'>
+        <nav className='md:hidden absolute top-28  flex space-x-12'>
           <Link href='/about'>About</Link>
           <a href='https://blogs.alwinjohn.com' target='_blank' rel='noreferrer'>
             Blogs

@@ -29,25 +29,25 @@ export default function Home() {
 
   return (
   <div className='min-h-screen flex flex-col '>
-    <main className="md:grid md:grid-cols-12 md:px-16 md:py-32 md:gap-x-5">         
-              <div className='col-start-2 col-span-6'>
+    <main className="grid md:grid-cols-12 md:px-16 py-32 md:gap-x-5 md:mx-0 mx-7">         
+              <div className='md:col-start-2 md:col-span-6'>
                 
                 <TimeDisplay />
-                <h3 className="text-8xl font-bold">Alwin John</h3>
-                <p className="text-5xl font-semibold pt-4 pb-10">Frontend Engineer | UX Engineer</p>
-                <p className='text-[30px] '>I&apos;m a Frontend Engineer with 1.5 years experience building interactive web apps.</p>
-                <p className='text-[30px] mt-8'>I <a href='' className=''>code</a>, <a href='' className=''>write</a> and build stuff on internet and talk about good design, solving problems and making the web more usable by keeping it simple.</p>
+                <h3 className="md:text-8xl text-6xl font-bold">Alwin John</h3>
+                <p className="md:text-5xl text-3xl font-semibold pt-4 pb-10">Frontend Engineer | UX Engineer</p>
+                <p className='md:text-3xl text-xl '>I&apos;m a Frontend Engineer with 1.5 years experience building interactive web apps.</p>
+                <p className='md:text-3xl text-xl mt-8'>I <a href='' className=''>code</a>, <a href='' className=''>write</a> and build stuff on internet and talk about good design, solving problems and making the web more usable by keeping it simple.</p>
               </div>
-              <Image className='col-end-12 col-span-3 rounded-full' src={profilePicture} placeholder='blur'  alt='A handsome guy' height={400} width={400}/>
+              <Image className='md:col-end-12 md:col-span-3 rounded-full md:p-0 p-7' src={profilePicture} placeholder='blur'  alt='A handsome guy' height={400} width={400}/>
     </main>
 
 
     <AchievementPreview />
 
-    <div className='md:grid md:grid-cols-12 md:px-16 md:py-16 md:gap-x-5'>
-    <h3 className='col-start-2 col-span-2 font-semibold text-4xl py-6'>Projects</h3>
+    <div className='grid md:grid-cols-12 md:px-16 py-16 md:gap-x-5 md:mx-0 mx-7'>
+    <h3 className='md:col-start-2 md:col-span-2 font-semibold text-4xl py-6'>Projects</h3>
 
-    <div className='col-start-2 col-span-10 flex justify-between text-slate-500'>
+    <div className='md:col-start-2 md:col-span-10  flex justify-between text-slate-500'>
       <div className='pb-12'>Selected open source projects.</div>
       {projectPreviews.length > 4 && (
 
@@ -59,7 +59,7 @@ export default function Home() {
 
    
 
-    <div className="md:col-start-2 md:col-span-10 md:grid md:grid-cols-2 grid-cols-1 md:gap-8">
+    <div className="md:col-start-2 md:col-span-10 grid md:grid-cols-2 grid-cols-1 gap-y-8 md:gap-8">
         {projectPreviews.slice(0, 4).map((preview, index) => (
             <div key={index}>{preview}</div>
         ))}
@@ -69,10 +69,10 @@ export default function Home() {
 
     </div>
 
-    <div className='md:grid md:grid-cols-12 md:px-16 md:py-16 md:gap-x-5'>
-    <h3 className='col-start-2 col-span-2 font-semibold text-4xl py-6'>Writings</h3>
+    <div className='grid md:grid-cols-12 md:px-16 py-16 md:gap-x-5 md:mx-0 mx-7'>
+    <h3 className='md:col-start-2 md:col-span-2 font-semibold text-4xl py-6'>Writings</h3>
 
-    <div className='col-start-2 col-span-10 flex justify-between text-slate-500'>
+    <div className='md:col-start-2 md:col-span-10 flex justify-between text-slate-500'>
       <div className='pb-12'>Some of my thoughts on designing, life, experience and developing great software.</div>
       {postPreviews.length > 4 && (
 
