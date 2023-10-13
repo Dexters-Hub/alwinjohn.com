@@ -3,6 +3,7 @@ import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import getProjectMetadata from '@/components/getProjectMetadata';
+import type { Metadata } from 'next';
 
 
 const getProjectContent = (slug: string) => {
@@ -19,6 +20,24 @@ export const generateStaticParams = async () => {
     slug: project.slug,
   }));
 };
+
+export async function generateMetadata(props: { params: { slug: string; }; }): Promise<Metadata> {
+  const slug = props.params.slug;
+  const project = getProjectContent(slug);
+
+  if (!project) return {
+    title:'Not Found',
+    description:'Not Found',
+  };
+
+  return {
+    title:project.data.title,
+    description:project.data.description,
+    alternates:{
+      canonical: `/projects/${slug}`,
+    },
+  };
+}
 
 const ProjectPage = (props: { params: { slug: string; }; }) => {
   const slug = props.params.slug;

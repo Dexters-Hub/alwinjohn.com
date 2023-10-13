@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import type { Metadata } from 'next';
 import profilePicture from '../../public/images/profile.png';
 import TimeDisplay from '@/components/Nav/TimeDisplay';
 import getPostMetadata from '@/components/getPostMetadata';
@@ -7,6 +8,14 @@ import Link from 'next/link';
 import AchievementPreview from '@/components/Achievement/AchievementPreview';
 import getProjectMetadata from '@/components/getProjectMetadata';
 import ProjectPreview from '@/components/ProjectPreview';
+
+
+export const metadata: Metadata = {
+  title: 'Alwin John - Frontend Engineer | UX Engineer',
+  description: 'Alwin John is a Frontend Engineer and UX Engineer based in Bangalore, India. He is a GitHub Campus Expert`22. He is passionate about building great user experiences and solving problems.',
+};
+
+
 
 export default function Home() {
   const postMetadata = getPostMetadata();

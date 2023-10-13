@@ -1,8 +1,20 @@
 import Nav from '@/components/Nav/Nav';
 import './globals.css';
-import type { Metadata } from 'next';
+
 import localFont from 'next/font/local';
 import Footer from '@/components/Footer/Footer';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://www.alwinjohn.com'),
+  title: {
+    default: 'Alwin John | Frontend Engineer',
+    template: '%s | Alwin John',
+  },
+  description: 'Alwin John is a Frontend Engineer and UX Engineer based in Bangalore, India. He is a GitHub Campus Expert`22. He is passionate about building great user experiences and solving problems.',
+};
+
+
 
 const proxima = localFont({
   src: [
@@ -22,10 +34,6 @@ const proxima = localFont({
   variable: '--font-proxima',
 });
 
-export const metadata: Metadata = {
-  title: 'Alwin John - Frontend Engineer | UX Engineer',
-  description: 'Alwin John is a Frontend Engineer and UX Engineer based in Bangalore, India.',
-};
 
 export default function RootLayout({
   children,

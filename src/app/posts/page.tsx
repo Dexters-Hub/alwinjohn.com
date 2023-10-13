@@ -1,6 +1,15 @@
 import PostPreview from '@/components/PostPreview';
 import getPostMetadata from '@/components/getPostMetadata';
+import { Metadata } from 'next';
 
+
+export const metadata: Metadata = {
+  title:'Posts',
+  description:'Amazing Posts writtrn by Alwin John',
+  alternates:{
+    canonical: '/posts',
+  },
+};
 
 const Posts = () => {
   const postMetadata = getPostMetadata();

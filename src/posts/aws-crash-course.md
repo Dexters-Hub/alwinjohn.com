@@ -1,5 +1,6 @@
 ---
 title: "Getting Started with AWS"
+description: "Learn more about the AWS API and configuration"
 subtitle: "Create an AWS account and set up CLI/SDK access. Well this has been done following the official documentation. Where we will setup the AWS account, Install AWS CLI, and create a IAM User."
 date: "31-08-2023"
 ---

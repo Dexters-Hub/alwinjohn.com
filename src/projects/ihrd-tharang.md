@@ -1,5 +1,6 @@
 ---
 title: "IHRD Tharang’23 - Official Website"
+description: "Official Website of IHRD Tharang'23 which built using TailwindCSS, styled-components, React.JS a JavaScript library for JavaScript. developed by Alwin John"
 subtitle: "IHRD Tharang’23, the first National Level Techno-Cultural-Entrepreneurial event organized by the Institute of Human Resources Development (IHRD)."
 date: "02-02-2023"
 ---

@@ -1,4 +1,11 @@
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: 'About Me',
+  description: 'Alwin John is developing amazing open-source projects. A Finger-Style Guitarist. He is a GitHub Campus Expert`22. He is passionate about building great user experiences and solving problems.',
+};
 
 export default function About() {
   return (

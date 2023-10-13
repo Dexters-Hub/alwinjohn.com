@@ -3,6 +3,8 @@ import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import getPostMetadata from '@/components/getPostMetadata';
+import type { Metadata } from 'next';
+
 
 
 const getPostContent = (slug: string) => {
@@ -19,6 +21,24 @@ export const generateStaticParams = async () => {
     slug: post.slug,
   }));
 };
+
+export async function generateMetadata(props: { params: { slug: string; }; }): Promise<Metadata> {
+  const slug = props.params.slug;
+  const post = getPostContent(slug);
+
+  if (!post) return {
+    title:'Not Found',
+    description:'Not Found',
+  };
+
+  return {
+    title:post.data.title,
+    description:post.data.description,
+    alternates:{
+      canonical: `/posts/${slug}`,
+    },
+  };
+}
 
 const PostPage = (props: { params: { slug: string; }; }) => {
   const slug = props.params.slug;

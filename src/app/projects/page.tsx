@@ -1,7 +1,15 @@
 import ProjectPreview from '@/components/ProjectPreview';
 import getProjectMetadata from '@/components/getProjectMetadata';
+import { Metadata } from 'next';
 
 
+export const metadata: Metadata = {
+  title:'Projects',
+  description:'Open Source, Collaborated Projects done by Alwin John',
+  alternates:{
+    canonical: '/projects',
+  },
+};
 
 const Projects = () => {
   const projectMetadata = getProjectMetadata();

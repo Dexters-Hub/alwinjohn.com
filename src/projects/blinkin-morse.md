@@ -1,5 +1,6 @@
 ---
 title: "Blinkin' Morse"
+description: "Blinkin Morse is a Flutter based application developed by Alwin John"
 subtitle: "Read text and then the convert the code to morse... - then flash it with the mobile device according to the pattern."
 date: "05-07-2022"
 ---

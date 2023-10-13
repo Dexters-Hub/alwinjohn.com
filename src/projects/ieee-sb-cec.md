@@ -1,5 +1,6 @@
 ---
 title: "Official Website - IEEE SB CEC"
+description: "Official Website - IEEE SB College of Engineering Chengannur built using styled-components, Next.JS, a JavaScript library for JavaScript developed by Alwin John"
 subtitle: "The IEEE Student Branch of College of Engineering, Chengannur formed on the 16th of September, 1996. What started as a small initiative for the technical advancement of the students, is now one of the most vibrant Student Branches of the Asia Pacific Region (Region 10) and Kerala Section."
 date: "01-20-2022"
 ---
