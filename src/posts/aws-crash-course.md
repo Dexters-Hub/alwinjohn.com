@@ -2,7 +2,7 @@
 title: "Getting Started with AWS"
 description: "Learn more about the AWS API and configuration"
 subtitle: "Create an AWS account and set up CLI/SDK access. Well this has been done following the official documentation. Where we will setup the AWS account, Install AWS CLI, and create a IAM User."
-date: "31-08-2023"
+date: "08-31-2023"
 ---
 
 "Cloud computing" plays a vital role in the creation of software products and services. It's also one of the most highly sought-after skills in the tech industry.
