@@ -7,7 +7,9 @@ const PostPreview = (props: PostMetadata) => {
       className="border min-h-[320px] border-slate-100 p-8 rounded-md shadow-sm
     bg-white hover:border-slate-300 transition duration-150 hover:ease-in"
     >
-      
+      <img className="w-full h-96 object-cover rounded-md mb-4 
+      border-slate-100 border-2
+      " src={props.image} alt=''/>
 
       
         <h2 className="text-2xl font-semibold my-2">{props.title}</h2>

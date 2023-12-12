@@ -43,7 +43,7 @@ const Nav = () => {
             Blogs
           </a>
           <Link href='/projects'>Projects</Link>
-          <Link href='mailto:alwinjohn.com'>Contact</Link>
+          <Link href='mailto:alwinjohn.tech@gmail.com'>Contact</Link>
         </nav>
       )}
 
@@ -54,7 +54,7 @@ const Nav = () => {
           Blogs
         </a>
         <Link href='/projects'>Projects</Link>
-        <Link href='mailto:alwinjohn.com'>Contact</Link>
+        <Link href='mailto:alwinjohn.tech@gmail.com'>Contact</Link>
       </nav>
     </div>
   );

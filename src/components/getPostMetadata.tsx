@@ -13,6 +13,7 @@ const getPostMetadata = (): PostMetadata[] => {
     const matterResult = matter(fileContents);
     return {
       title: matterResult.data.title,
+      image: matterResult.data.image,
       date: matterResult.data.date,
       description: matterResult.data.description,
       subtitle: matterResult.data.subtitle,

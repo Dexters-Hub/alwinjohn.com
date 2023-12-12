@@ -50,6 +50,31 @@ export default function Home() {
               <Image className='md:col-end-12 md:col-span-3 rounded-full md:p-0 p-7' src={profilePicture} placeholder='blur'  alt='A handsome guy' height={400} width={400}/>
     </main>
 
+    <div className='grid md:grid-cols-12 md:px-16 py-16 md:gap-x-5 md:mx-0 mx-7'>
+    <h3 className='md:col-start-2 md:col-span-2 font-semibold text-4xl py-6'>Writings</h3>
+
+    <div className='md:col-start-2 md:col-span-10 flex justify-between text-slate-500'>
+      <div className='pb-12'>Some writings about tech, experience, psychology and some life lessons as well :D</div>
+      {postPreviews.length > 4 && (
+
+                <Link href='/posts'>View all</Link> 
+
+      )}
+    </div>
+    
+
+   
+
+    <div className="md:col-start-2 md:col-span-10 md:grid md:grid-cols-2  grid-cols-1 md:gap-8">
+        {postPreviews.slice(0, 4).map((preview, index) => (
+            <div key={index}>{preview}</div>
+        ))}
+    </div>
+
+    
+
+    </div>
+
 
     <AchievementPreview />
 
@@ -78,30 +103,7 @@ export default function Home() {
 
     </div>
 
-    <div className='grid md:grid-cols-12 md:px-16 py-16 md:gap-x-5 md:mx-0 mx-7'>
-    <h3 className='md:col-start-2 md:col-span-2 font-semibold text-4xl py-6'>Writings</h3>
-
-    <div className='md:col-start-2 md:col-span-10 flex justify-between text-slate-500'>
-      <div className='pb-12'>Some of my thoughts on designing, life, experience and developing great software.</div>
-      {postPreviews.length > 4 && (
-
-                <Link href='/posts'>View all</Link> 
-
-      )}
-    </div>
     
-
-   
-
-    <div className="md:col-start-2 md:col-span-10 md:grid md:grid-cols-2  grid-cols-1 md:gap-8">
-        {postPreviews.slice(0, 4).map((preview, index) => (
-            <div key={index}>{preview}</div>
-        ))}
-    </div>
-
-    
-
-    </div>
 
 
     

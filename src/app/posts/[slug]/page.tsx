@@ -44,14 +44,14 @@ const PostPage = (props: { params: { slug: string; }; }) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
   return (
-    <div className='grid grid-cols-12 px-16 py-32 gap-x-5'>
-      <div className="col-start-2 col-span-10 ">
-        <h1 className="text-4xl font-bold">{post.data.title}</h1>
-        <p className="text-slate-400 mt-2 text-l">{post.data.date}</p>
+    <div className='grid md:grid-cols-12 grid-cols-1 md:px-16 py-16 md:gap-x-5 md:mx-0 mx-7'>
+      <div className="md:col-start-2 md:col-span-4 ">
+        <h1 className="md:col-start-2 md:col-span-10 col-start-2 col-span-10 text-4xl font-bold">{post.data.title}</h1>
+        <p className="md:col-start-2 md:col-span-10 text-slate-400 mt-2 text-l">{post.data.date}</p>
       </div>
 
-      <article className="col-start-2 w-full col-span-10 prose text-2xl">
-        <Markdown className="w-full">{post.content}</Markdown>
+      <article className="md:col-start-2 md:col-span-10 prose text-2xl">
+        <Markdown className="md:col-start-2 md:col-span-10 col-start-2 col-span-10">{post.content}</Markdown>
       </article>
         
       
