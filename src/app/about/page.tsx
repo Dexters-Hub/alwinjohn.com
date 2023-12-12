@@ -11,23 +11,23 @@ export const metadata: Metadata = {
 export default function About() {
   return (
   <div className='min-h-screen'>
-    <main className="grid md:grid-cols-12 grid-cols-1 md:px-16 py-16 md:gap-x-5 md:mx-0 mx-7">   
-        <h3 className='col-start-2  col-span-2 font-semibold text-4xl'>About Me</h3>
-        <div className='col-start-2 col-span-10 text-2xl mb-12'>
+    <main className="grid md:grid-cols-12 grid-cols-2 md:px-16 py-16 md:gap-x-5 md:mx-0 mx-7">   
+        <h3 className='md:col-start-2  md:col-span-2 col-start-1 col-span-2 font-semibold text-4xl'>About Me</h3>
+        <div className='md:col-start-2 md:col-span-10 col-start-1 col-span-2 text-2xl mb-12'>
             <p className='mt-8'>Hey there! 👋. I&apos;m Alwin John, a Front End Engineer based in India, that loves to code and build products with a delightful user experience.</p>
             <p className='mt-8'>Currently building amazing open-source projects.  Before that I mentored several students regarding their development and career.</p>
             <p className='mt-8'>I love working in between product, engineering and developer experience. Some things that make me excited are JavaScript, Open Source, CI & CD systems, simplicity, automating things and building meaningful user-centric products.</p>
             <p className='mt-8'>Outside of work, I&apos;m obsessed with puzzles, doing open source, playing music and have fun.</p>
         </div>
         
-        <div className='relative col-start-2 col-span-10 py-96'>
+        <div className='relative md:col-start-2 md:col-span-10 col-start-1 col-span-2 py-96'>
         
-            <Image className='col-start-2 z-10 absolute top-20' src='/images/rock.png' alt='A handsome guy' height={450} width={450}/>
-            <Image className='z-20  absolute top-12 left-[25em]' src='/images/mask.png' alt='A handsome guy' height={420} width={420}/>
-            <Image className='z-10 absolute right-0 top-20' src='/images/group.png' alt='A handsome guy' height={550} width={550}/>
+            <Image className='md:col-start-2 md:z-10 md:absolute md:top-20' src='/images/rock.png' alt='A handsome guy' height={450} width={450}/>
+            <Image className='md:z-20  md:absolute md:top-12 md:left-[25em]' src='/images/mask.png' alt='A handsome guy' height={420} width={420}/>
+            <Image className='md:z-10 md:absolute md:right-0 md:top-20' src='/images/group.png' alt='A handsome guy' height={550} width={550}/>
         
         </div>
-        <h3 className='col-start-2 col-span-2 font-semibold text-4xl pt-16'>Work</h3>
+        <h3 className='md:col-start-2 md:col-span-2 col-start-1 col-span-2 font-semibold text-4xl pt-16'>Work</h3>
 
         <WorkExperience 
         title="Frontend Engineer"
@@ -55,8 +55,8 @@ export default function About() {
         />
 
 
-        <h3 className='col-start-2 col-span-2 font-semibold text-4xl'>Online</h3>
-        <nav className='col-start-2 flex space-x-4 py-12 font-normal'>
+        <h3 className='md:col-start-2 md:col-span-2 col-start-1 col-span-2 font-semibold text-4xl'>Online</h3>
+        <nav className='md:flex grid md:col-start-2 md:col-span-10 md:space-x-4 md:space-y-0 col-start-1 py-12 font-normal'>
           <a href='mailto:alwinjohn.tech@gmail.com' className='rounded-lg border text-slate-500 py-2 px-8 hover:bg-red-500 transition duration-250 hover:ease-in hover:text-white'>Email</a>
           <a href='https://twitter.com/_alwin_john' target='_blank' rel='noreferrer' className="rounded-lg border text-slate-500 py-2 px-8 transition duration-250 hover:ease-in hover:bg-sky-500  hover:text-white">Twitter</a>
           <a href='https://github.com/Dexters-Hub' target='_blank' rel='noreferrer' className="rounded-lg border text-slate-500 py-2 px-8 transition duration-250 hover:ease-in hover:bg-gray-900  hover:text-white">GitHub</a>
@@ -64,7 +64,7 @@ export default function About() {
           <a href='https://www.linkedin.com/in/alwinjohn/' target='_blank' rel='noreferrer' className="rounded-lg border text-slate-500 py-2 px-8 transition duration-250 hover:ease-in hover:bg-blue-600  hover:text-white">LinkedIn</a>
         </nav>
 
-        <h3 className='col-start-2 col-span-2 font-semibold text-4xl pt-16'>Volunteering</h3>
+        <h3 className='md:col-start-2 md:col-span-2 col-start-1 font-semibold text-4xl pt-16'>Volunteering</h3>
 
         <WorkExperience 
         title="GitHub Campus Expert"
