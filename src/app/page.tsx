@@ -19,7 +19,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const postMetadata = getPostMetadata();
-  const postPreviews = postMetadata.map((post) => (
+  const postPreviews = postMetadata.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  }).map((post) => (
     <PostPreview key={post.slug} {...post} />
   ));
 

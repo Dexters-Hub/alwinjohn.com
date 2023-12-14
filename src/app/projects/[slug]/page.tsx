@@ -14,6 +14,9 @@ const getProjectContent = (slug: string) => {
   return matterResult;
 };
 
+//method for selecting text and making it shareable on twitter or other
+
+
 export const generateStaticParams = async () => {
   const projects = getProjectMetadata();
   return projects.map((project) => ({
