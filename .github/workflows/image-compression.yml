@@ -1,6 +1,8 @@
 name: Compress Images
 on:
   push:
+    branches:
+      - main
     paths:
       - '**.jpg'
       - '**.jpeg'
