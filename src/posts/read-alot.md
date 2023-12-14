@@ -2,7 +2,7 @@
 title: "You have to read a lot! (Seriously, you have to read)"
 image: "images/posts/read-alot.png"
 description: "It doesn't matter if you are not pursuing a career that doesn't involve reading, but you should read nonetheless"
-subtitle: "Information is 24x7 available, which means you have to read to understand what is going on"
+subtitle: "Information is 24x7 available, which means you have to read a lot to understand what is going on in the world. This is the information age and these kind of habits helps you to become a thinker"
 date: "12-14-2023"
 ---
 There are so many things going on here and there, and we think that doesn't involve us (you) at all.
