@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
-import profilePicture from '../../public/images/profile.png';
+import profilePicture from '../../public/images/profile-v2.jpg';
 import TimeDisplay from '@/components/Nav/TimeDisplay';
 import getPostMetadata from '@/components/getPostMetadata';
 import PostPreview from '@/components/PostPreview';

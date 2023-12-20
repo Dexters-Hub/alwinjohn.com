@@ -3,7 +3,7 @@
 import { useState } from 'react'; // Import useState
 import Image from 'next/image';
 import Link from 'next/link';
-import profilePicture from '../../../public/images/profile.png';
+import profilePicture from '../../../public/images/profile-v2.jpg';
 
 const Nav = () => {
   // Create a state variable to track the mobile menu visibility
